@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <title>momentum</title>
+</head>
+<body id="body">
+  <header class="header">
+    <div class="player visible" id="Player">
+      <div class="audio-player player visible">
+        <div class="timeline">
+          <div class="progress"></div>
+        </div>
+        <div class="controls">
+          <div class="player-container">
+            <button class="play-prev player-icon"></button>
+            <button id="play-btn" class="play player-icon btn"></button>
+            <button class="play-next player-icon"></button>
+          </div>
+          <div class="play-time">
+            <div class="current">0:00</div>
+            <div class="divider">/</div>
+            <div class="length"></div>
+          </div>
+          <div class="music-name">Music Song</div>
+          <div class="volume-container">
+            <div class="volume-button">
+              <div class="volume vol-ico"></div>
+            </div> 
+            <div class="volume-slider">
+              <div class="volume-percentage"></div>
+            </div>
+          </div>
+      </div>
+      </div>
+      <ul class="play-list">
+      </ul>
+    </div>
+    <div class="flag"></div>
+    <div class="weather visible"  id="Weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error transparent"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time visible"  id="Clock"></time>
+    <date class="date visible" id="Date"></date>
+    <div class="greeting-container visible"   id="Greeting">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+  <footer class="footer-container">
+    <div id="popup" class="settings-popup transparent">
+      <h2 id="settHead">Click to hide</h2>
+      <ul class="settings-list">
+        <li id="Player" class="settings-list-item"><img class="ico ico-player" src="./assets/svg/settings/player.svg"><p id="playerText">Player</p></li>
+        <li id="Weather" class="settings-list-item"><img class="ico ico-weather" src="./assets/svg/settings/weather.svg"><p id="weatherText">Weather</p></li>
+        <li id="Clock" class="settings-list-item"><img class="ico ico-clock" src="./assets/svg/settings/time.svg"><p id="clockText">Clock</p></li>
+        <li id="Date" class="settings-list-item"><img class="ico ico-date" src="./assets/svg/settings/date.svg"><p id="dateText">Date</p></li>
+        <li id="Greeting" class="settings-list-item"><img class="ico ico-greetings" src="./assets/svg/settings/greeting.svg"><p id="greetingText">Greeting</p></li>
+        <hr class="photoHr">
+        <div class="photo-source">
+          <h3 id="photo-heading">Photo source</h3>
+          
+          <fieldset id="photo-radio" class="photo-radio">
+            <div>
+              <input class="radio" type="radio" id="github-radio" name="source" value="github" checked>
+              <label for="github-radio">GitHub</label>
+            </div>
+          
+            <div>
+              <input class="radio"  type="radio" id="api-radio" name="source" value="api">
+              <label for="api-radio">Unsplash API</label>
+            </div>
+            <input type="text" class="tags" placeholder="Tags (optional)" disabled>
+          </fieldset>
+        
+        </div>
+      </ul>
+    </div>
+    <div class="settings"><img class="settings-ico" src="./assets/svg/settings/settings-gear.svg"
+        alt="opens settings little window">
+  
+    </div>
+    <div class="footer">
+      <div class="main-goal-container">
+        <h2 class="mg-heading"></h2>
+        <div class="goal-col">
+          <h2 class="secret-heading nodisplay"></h2>
+          <input class="main-goal-input" type="text">
+          <div><img class="mg-reset" src="./assets/svg/remove.svg" alt=""></div>
+          
+        </div>
+      </div>
+      <button class="change-quote"></button>
+      <div id="QuotesCont" class="visible">
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+      <div class="footer-social">
+        <div class="github social-ico"></div>
+        <div class="codewars social-ico"></div>
+        <div class="rs social-ico">RS</div>
+      </div>
+    </div>
+    
+
+  </footer>
+  <script type="module" src="./index.js"></script>
+  
+  </body>
+  
+  </html>
