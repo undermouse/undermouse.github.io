@@ -1,0 +1,12 @@
+body {
+  font-family: 'Lobster', cursive;
+  font-size: 84px;
+  align-items: center;
+  text-align: center;
+  color: dodgerblue;
+}
+
+.big-h1, .big-h3 {
+  font-size: 26px;
+  color: black;
+}
